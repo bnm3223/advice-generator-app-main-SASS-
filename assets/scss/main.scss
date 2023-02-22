@@ -1,0 +1,68 @@
+//variables
+$Light-Cyan: hsl(193, 38%, 86%);
+$Neon-Green: hsl(150, 100%, 66%);
+
+$Grayish-Blue: hsl(217, 19%, 38%);
+$Dark-Grayish-Blue: hsl(217, 19%, 24%);
+$Dark-Blue: hsl(218, 23%, 16%);
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: $Dark-Blue;
+    font-family: "Manrope", sans-serif;
+}
+.container {
+    position: relative;
+    margin: 20% auto;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    background: $Dark-Grayish-Blue;
+
+    h5 {
+        margin: 20px;
+        color: $Neon-Green;
+        letter-spacing: 5px;
+    }
+    p {
+        color: $Light-Cyan;
+        font-size: 28px;
+    }
+    img {
+        margin: 30px auto;
+        width: 100%;
+    }
+    i {
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        &.dice {
+            background-image: url("/images/icon-dice.svg");
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &__icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background: $Neon-Green;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover,
+        :active {
+            box-shadow: 0 0 10px $Neon-Green;
+        }
+    }
+}

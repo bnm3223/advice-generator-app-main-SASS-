@@ -1,0 +1,51 @@
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #1f2632;
+  font-family: "Manrope", sans-serif; }
+
+.container {
+  position: relative;
+  margin: 20% auto;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  background: #323a49; }
+  .container h5 {
+    margin: 20px;
+    color: #52ffa8;
+    letter-spacing: 5px; }
+  .container p {
+    color: #cee3e9;
+    font-size: 28px; }
+  .container img {
+    margin: 30px auto;
+    width: 100%; }
+  .container i {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+    .container i.dice {
+      background-image: url("/images/icon-dice.svg");
+      width: 20px;
+      height: 20px; }
+  .container__icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #52ffa8;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .container__icon:hover,
+    .container__icon :active {
+      box-shadow: 0 0 10px #52ffa8; }
