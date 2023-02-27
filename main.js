@@ -1,4 +1,5 @@
-function init() {
+window.onload = function () {
+
     const idAdvice = document.getElementById("advice-id");
     const textAdvice = document.getElementById("advice-text");
     const btn = document.getElementById("btn");
@@ -17,6 +18,6 @@ function init() {
         textAdvice.innerHTML = "Advice not available"
     }
     btn.addEventListener('click', () => fetchData())
-}
-document.addEventListener("DOMContentLoaded", () => init())
+    fetchData();
 
+}
